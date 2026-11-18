@@ -1,20 +1,9 @@
-function updateDesktopMessage() {
-  const message = document.getElementById("desktop-message");
-  if (message) {
-    message.classList.toggle("desktop-visible", window.innerWidth < 1440);
-  }
-}
-
-updateDesktopMessage();
-window.addEventListener("resize", updateDesktopMessage);
-
 const languageOrder = ["en", "id", "fil", "th", "vi"];
 const translationRows = {
   "brand.title": ["Ragnarok: The New World", "Ragnarok: Dunia Baru", "Ragnarok: Bagong Mundo", "Ragnarok: โลกใหม่", "Ragnarok: Thế Giới Mới"],
   "brand.name": ["RAGNAROK", "RAGNAROK", "RAGNAROK", "RAGNAROK", "RAGNAROK"],
   "brand.subtitle": ["THE NEW WORLD", "DUNIA BARU", "BAGONG MUNDO", "โลกใหม่", "THẾ GIỚI MỚI"],
   "meta.description": ["Ragnarok: The New World - A New Legend Awakes in Midgard.", "Ragnarok: Dunia Baru - Legenda Baru Terbangun di Midgard.", "Ragnarok: Bagong Mundo - Nagigising ang Bagong Alamat sa Midgard.", "Ragnarok: โลกใหม่ - ตำนานบทใหม่ตื่นขึ้นในมิดการ์ด", "Ragnarok: Thế Giới Mới - Huyền thoại mới thức tỉnh tại Midgard."],
-  "desktop.message": ["Please open on Desktop for best experience", "Buka di komputer untuk pengalaman terbaik", "Buksan sa desktop para sa pinakamagandang karanasan", "เปิดบนคอมพิวเตอร์เพื่อประสบการณ์ที่ดีที่สุด", "Vui lòng mở trên máy tính để có trải nghiệm tốt nhất"],
   "nav.aria": ["Header actions", "Aksi navigasi", "Mga aksyon sa nabigasyon", "เมนูนำทาง", "Thao tác điều hướng"],
   "language.aria": ["Page language", "Bahasa halaman", "Wika ng pahina", "ภาษาของหน้าเว็บ", "Ngôn ngữ trang"],
   "language.en": ["EN - English", "EN - Inggris", "EN - Ingles", "EN - อังกฤษ", "EN - Tiếng Anh"],
@@ -178,16 +167,6 @@ function setLanguage(language) {
     } else {
       element.textContent = translatedText;
     }
-  });
-
-  document.querySelectorAll("[data-i18n-placeholder]").forEach((element) => {
-    const key = element.dataset.i18nPlaceholder;
-    const translatedText = dictionary[key];
-    if (translatedText === undefined) {
-      console.error(`Missing "${key}" translation for "${language}".`);
-      return;
-    }
-    element.setAttribute("placeholder", translatedText);
   });
 
   localStorage.setItem("rag_lang", language);
