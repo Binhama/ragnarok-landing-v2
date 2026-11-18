@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#0A0A0A">
-  <meta name="description" content="Ragnarok: The New World - A New Legend Awakes in Midgard.">
-  <title>Ragnarok: The New World</title>
+  <meta name="description" content="Ragnarok: The New World - A New Legend Awakes in Midgard." data-i18n="meta.description" data-i18n-attr="content">
+  <title data-i18n="brand.title">Ragnarok: The New World</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -13,156 +13,204 @@
   <script src="script.js" defer></script>
 </head>
 <body>
-  <div class="desktop-message" id="desktop-message" aria-live="polite">Please open on Desktop for best experience</div>
+  <div class="desktop-message" id="desktop-message" aria-live="polite" data-i18n="desktop.message">Please open on Desktop for best experience</div>
 
   <header class="nav" id="top">
     <div class="container nav-inner">
-      <a class="brand" href="#top" aria-label="Ragnarok: The New World">
+      <a class="brand" href="#top" aria-label="Ragnarok: The New World" data-i18n="brand.title" data-i18n-attr="aria-label">
         <span class="brand-mark">R</span>
-        <span>RAGNAROK<small>THE NEW WORLD</small></span>
+        <span><span data-i18n="brand.name">RAGNAROK</span><small data-i18n="brand.subtitle">THE NEW WORLD</small></span>
       </a>
-      <nav class="nav-links" aria-label="Header actions">
-        <div class="language-switcher" role="group" aria-label="Class name language">
-          <button type="button" data-class-language="en" aria-pressed="true">EN</button>
+      <nav class="nav-links" aria-label="Header actions" data-i18n="nav.aria" data-i18n-attr="aria-label">
+        <div class="language-switcher" role="group" aria-label="Page language" data-i18n="language.aria" data-i18n-attr="aria-label">
+          <button type="button" data-language="en" aria-pressed="true"><span aria-hidden="true">🇬🇧</span> <span data-i18n="language.en">EN - English</span></button>
           <span aria-hidden="true">|</span>
-          <button type="button" data-class-language="id" aria-pressed="false">ID</button>
+          <button type="button" data-language="id" aria-pressed="false"><span aria-hidden="true">🇮🇩</span> <span data-i18n="language.id">ID - Indonesian</span></button>
           <span aria-hidden="true">|</span>
-          <button type="button" data-class-language="th" aria-pressed="false">TH</button>
+          <button type="button" data-language="fil" aria-pressed="false"><span aria-hidden="true">🇵🇭</span> <span data-i18n="language.fil">PH - Filipino</span></button>
+          <span aria-hidden="true">|</span>
+          <button type="button" data-language="th" aria-pressed="false"><span aria-hidden="true">🇹🇭</span> <span data-i18n="language.th">TH - Thai</span></button>
+          <span aria-hidden="true">|</span>
+          <button type="button" data-language="vi" aria-pressed="false"><span aria-hidden="true">🇻🇳</span> <span data-i18n="language.vi">VN - Vietnamese</span></button>
         </div>
-        <a class="btn btn-gold" href="#go2offer#">PLAY NOW</a>
+        <a class="btn btn-gold" href="#go2offer#" data-i18n="button.play">PLAY NOW</a>
       </nav>
     </div>
   </header>
 
   <main>
     <section class="hero" aria-labelledby="hero-title">
-      <img class="hero-image" src="assets/images/hero.webp" alt="Official Ragnarok: The New World hero artwork" width="1200" height="675" fetchpriority="high">
+      <img class="hero-image" src="assets/images/hero.webp" alt="Official Ragnarok: The New World hero artwork" data-i18n="image.hero" data-i18n-attr="alt" width="1200" height="675" fetchpriority="high">
       <div class="hero-shade"></div>
       <div class="container hero-inner">
         <div class="hero-copy">
-          <p class="eyebrow">The legend returns</p>
-          <h1 id="hero-title">RAGNAROK:<br>THE NEW WORLD</h1>
-          <p class="hero-subtitle">A New Legend Awakes in Midgard</p>
+          <p class="hero-free-badge" data-i18n="hero.badge.free">100% FREE TO PLAY</p>
+          <p class="eyebrow" data-i18n="hero.eyebrow">The legend returns</p>
+          <h1 id="hero-title"><span data-i18n="brand.name">RAGNAROK</span>:<br><span data-i18n="brand.subtitle">THE NEW WORLD</span></h1>
+          <p class="hero-subtitle" data-i18n="hero.subtitle">A New Legend Awakes in Midgard</p>
           <div class="hero-actions">
-            <a class="btn btn-gold" href="#go2offer#">PLAY NOW</a>
-            <a class="btn btn-outline" href="#go2offer#">WATCH TRAILER</a>
+            <a class="btn btn-gold" href="#go2offer#" data-i18n="button.play">PLAY NOW</a>
           </div>
-          <div class="hero-stats" aria-label="Game highlights">
-            <span><b>8</b> Classes</span>
-            <span><b>100+</b> Dungeons</span>
-            <span>PvP &amp; <b>Guild Wars</b></span>
+          <p class="hero-play-note" data-i18n="hero.line.free">FREE TO PLAY • Available on Steam</p>
+          <p class="hero-steam-note" data-i18n="hero.line.steam">Official Game on Steam</p>
+          <div class="hero-stats" aria-label="Game highlights" data-i18n="hero.stats.aria" data-i18n-attr="aria-label">
+            <span><b>8</b> <span data-i18n="hero.stats.classes">Classes</span></span>
+            <span><b>100+</b> <span data-i18n="hero.stats.dungeons">Dungeons</span></span>
+            <span><span data-i18n="hero.stats.pvp">PvP &amp;</span> <b data-i18n="hero.stats.guild">Guild Wars</b></span>
+            <span data-i18n="hero.stats.free">FREE TO PLAY</span>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section" id="benefits">
+    <section id="features" aria-labelledby="features-heading">
+      <div class="section" id="benefits">
+        <div class="container">
+          <div class="section-heading centered">
+            <p class="eyebrow" data-i18n="benefits.eyebrow">Your adventure, your rules</p>
+            <h2 id="features-heading"><span data-i18n="benefits.heading">A WORLD BUILT FOR</span> <span data-i18n="benefits.heading.emphasis">LEGENDS</span></h2>
+            <p data-i18n="benefits.description">Choose your path and leave your mark across Midgard.</p>
+          </div>
+          <div class="benefit-grid">
+            <article class="benefit-card">
+              <span class="benefit-index">01</span>
+              <h3 data-i18n="benefits.card1.title">Choose Your Path</h3>
+              <p data-i18n="benefits.card1.description">Six classic classes with distinct roles, skills and fighting styles.</p>
+            </article>
+            <article class="benefit-card">
+              <span class="benefit-index">02</span>
+              <h3 data-i18n="benefits.card2.title">Explore Together</h3>
+              <p data-i18n="benefits.card2.description">Journey through dungeons, uncover secrets and challenge mighty MVPs.</p>
+            </article>
+            <article class="benefit-card">
+              <span class="benefit-index">03</span>
+              <h3 data-i18n="benefits.card3.title">Fight for Your Guild</h3>
+              <p data-i18n="benefits.card3.description">Recruit allies, build your guild and compete for territory and glory.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+
+      <section class="section" id="classes">
+        <div class="container">
+          <div class="section-heading centered">
+            <p class="eyebrow" data-i18n="classes.eyebrow">Choose your path</p>
+            <h2><span data-i18n="classes.heading">CHOOSE YOUR</span> <span data-i18n="classes.heading.emphasis">CLASS</span></h2>
+            <p data-i18n="classes.description">8 Classes — find the path that fits your legend.</p>
+          </div>
+          <div class="class-grid">
+            <article class="class-card"><img src="assets/images/class-swordsman.webp" alt="Official Swordsman class artwork" data-i18n="image.swordsman" data-i18n-attr="alt" width="1200" height="1068" loading="lazy"><div class="class-info"><span data-i18n="class.role.tank">Tank / Melee</span><h3 data-i18n="class.swordsman">Swordsman</h3><p data-i18n="class.swordsman.description">Stand at the front.</p></div></article>
+            <article class="class-card"><img src="assets/images/class-mage.webp" alt="Official Mage class artwork" data-i18n="image.mage" data-i18n-attr="alt" width="960" height="540" loading="lazy"><div class="class-info"><span data-i18n="class.role.magic">Magic DPS</span><h3 data-i18n="class.mage">Mage</h3><p data-i18n="class.mage.description">Command the elements.</p></div></article>
+            <article class="class-card"><img src="assets/images/class-archer.webp" alt="Official Archer class artwork" data-i18n="image.archer" data-i18n-attr="alt" width="1056" height="1286" loading="lazy"><div class="class-info"><span data-i18n="class.role.ranged">Ranged DPS</span><h3 data-i18n="class.archer">Archer</h3><p data-i18n="class.archer.description">Strike from afar.</p></div></article>
+            <article class="class-card"><img src="assets/images/class-acolyte.webp" alt="Official Acolyte class artwork" data-i18n="image.acolyte" data-i18n-attr="alt" width="1200" height="1267" loading="lazy"><div class="class-info"><span data-i18n="class.role.healer">Healer / Support</span><h3 data-i18n="class.acolyte">Acolyte</h3><p data-i18n="class.acolyte.description">Protect your allies.</p></div></article>
+            <article class="class-card"><img src="assets/images/class-merchant.webp" alt="Official Merchant class artwork" data-i18n="image.merchant" data-i18n-attr="alt" width="1200" height="1249" loading="lazy"><div class="class-info"><span data-i18n="class.role.trade">Craft / Trade</span><h3 data-i18n="class.merchant">Merchant</h3><p data-i18n="class.merchant.description">Master commerce.</p></div></article>
+            <article class="class-card"><img src="assets/images/class-thief.webp" alt="Official Thief class artwork" data-i18n="image.thief" data-i18n-attr="alt" width="1200" height="1449" loading="lazy"><div class="class-info"><span data-i18n="class.role.assassin">Assassin / Speed</span><h3 data-i18n="class.thief">Thief</h3><p data-i18n="class.thief.description">Move without warning.</p></div></article>
+            <article class="class-card"><img src="assets/images/class-swordsman.webp" alt="Swordsman artwork reused for the Knight class card" data-i18n="image.knight" data-i18n-attr="alt" width="1200" height="1068" loading="lazy"><div class="class-info"><span data-i18n="class.role.frontline">Frontline / Defense</span><h3 data-i18n="class.knight">Knight</h3><p data-i18n="class.knight.description">Defend allies in battle.</p></div></article>
+            <article class="class-card"><img src="assets/images/class-acolyte.webp" alt="Acolyte artwork reused for the Priest class card" data-i18n="image.priest" data-i18n-attr="alt" width="1200" height="1267" loading="lazy"><div class="class-info"><span data-i18n="class.role.healing">Healing / Support</span><h3 data-i18n="class.priest">Priest</h3><p data-i18n="class.priest.description">Bring holy aid to your party.</p></div></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section proof-section" id="proof">
+        <div class="container">
+          <div class="section-heading centered">
+            <p class="eyebrow" data-i18n="proof.eyebrow">Visual proof</p>
+            <h2><span data-i18n="proof.heading">YOUR LEGEND,</span> <span data-i18n="proof.heading.emphasis">WRITTEN IN GOLD</span></h2>
+          </div>
+          <div class="proof-grid">
+            <article class="proof-card"><img src="assets/images/proof-dungeons.webp" alt="Official Ragnarok: The New World dungeon gameplay" data-i18n="image.proof.dungeons" data-i18n-attr="alt" width="1200" height="675" loading="lazy"><div><span data-i18n="proof.dungeons.label">EXPLORE</span><h3 data-i18n="proof.dungeons.title">Dungeons</h3><p data-i18n="proof.dungeons.description">Party up for story raids and dangerous realms.</p></div></article>
+            <article class="proof-card"><img src="assets/images/proof-mvp.webp" alt="Official Ragnarok: The New World MVP boss gameplay" data-i18n="image.proof.mvp" data-i18n-attr="alt" width="1200" height="675" loading="lazy"><div><span data-i18n="proof.mvp.label">CHALLENGE</span><h3 data-i18n="proof.mvp.title">MVP Bosses</h3><p data-i18n="proof.mvp.description">Challenge legendary bosses across Midgard.</p></div></article>
+            <article class="proof-card"><img src="assets/images/proof-guildwars.webp" alt="Official Ragnarok: The New World guild war gameplay" data-i18n="image.proof.guildwars" data-i18n-attr="alt" width="1200" height="675" loading="lazy"><div><span data-i18n="proof.guildwars.label">CONQUER</span><h3 data-i18n="proof.guildwars.title">Guild Wars</h3><p data-i18n="proof.guildwars.description">Raise your banner and fight for glory.</p></div></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="start">
+        <div class="container">
+          <div class="section-heading centered">
+            <p class="eyebrow" data-i18n="start.eyebrow">Begin your journey</p>
+            <h2><span data-i18n="start.heading">HOW TO START IN</span> <span data-i18n="start.heading.emphasis">3 STEPS</span></h2>
+          </div>
+          <ol class="steps-grid">
+            <li><span>01</span><h3 data-i18n="start.step1.title">Choose Your Hero</h3><p data-i18n="start.step1.description">Select the class that matches your combat style.</p></li>
+            <li><span>02</span><h3 data-i18n="start.step2.title">Create Your Legend</h3><p data-i18n="start.step2.description">Customize your adventurer and enter Midgard.</p></li>
+            <li><span>03</span><h3 data-i18n="start.step3.title">Start the Adventure</h3><p data-i18n="start.step3.description">Explore, party up and conquer the New World.</p></li>
+          </ol>
+          <div class="center-action"><a class="btn btn-gold" href="#go2offer#" data-i18n="button.play">PLAY NOW</a></div>
+        </div>
+      </section>
+
+      <section class="section" id="social-proof">
+        <div class="container">
+          <div class="social-grid">
+            <article class="social-card"><p data-i18n="social.sea">Join players across SEA</p></article>
+            <article class="social-card"><p data-i18n="social.guild">Play with your guild</p></article>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <section class="section" id="system-requirements">
       <div class="container">
         <div class="section-heading centered">
-          <p class="eyebrow">Your adventure, your rules</p>
-          <h2>A WORLD BUILT FOR <span>LEGENDS</span></h2>
-          <p>Choose your path and leave your mark across Midgard.</p>
+          <p class="eyebrow" data-i18n="requirements.eyebrow">System requirements</p>
+          <h2 data-i18n="requirements.heading">CAN YOUR PC RUN IT?</h2>
         </div>
-        <div class="benefit-grid">
-          <article class="benefit-card">
-            <span class="benefit-index">01</span>
-            <h3>Choose Your Path</h3>
-            <p>Six classic classes with distinct roles, skills and fighting styles.</p>
+        <div class="requirements-grid">
+          <article class="requirements-card">
+            <h3 data-i18n="requirements.minimum">MINIMUM</h3>
+            <p data-i18n="requirements.minimum.os">Operating System: Windows 10</p>
+            <p data-i18n="requirements.minimum.cpu">Processor: Intel i3 / Ryzen 3</p>
+            <p data-i18n="requirements.minimum.memory">Memory: 8GB RAM</p>
+            <p data-i18n="requirements.minimum.gpu">Graphics: GTX 1050</p>
+            <p data-i18n="requirements.minimum.storage">Storage: 20GB</p>
           </article>
-          <article class="benefit-card">
-            <span class="benefit-index">02</span>
-            <h3>Explore Together</h3>
-            <p>Journey through dungeons, uncover secrets and challenge mighty MVPs.</p>
-          </article>
-          <article class="benefit-card">
-            <span class="benefit-index">03</span>
-            <h3>Fight for Your Guild</h3>
-            <p>Recruit allies, build your guild and compete for territory and glory.</p>
+          <article class="requirements-card">
+            <h3 data-i18n="requirements.recommended">RECOMMENDED</h3>
+            <p data-i18n="requirements.recommended.os">Operating System: Windows 11</p>
+            <p data-i18n="requirements.recommended.cpu">Processor: Intel i5 / Ryzen 5</p>
+            <p data-i18n="requirements.recommended.memory">Memory: 16GB RAM</p>
+            <p data-i18n="requirements.recommended.gpu">Graphics: GTX 1660</p>
+            <p data-i18n="requirements.recommended.storage">Storage: 20GB SSD</p>
           </article>
         </div>
+        <p class="requirements-note" data-i18n="requirements.note">Runs on most PCs - No powerful PC needed</p>
       </div>
     </section>
 
-    <section class="section" id="classes">
-      <div class="container">
-        <div class="section-heading centered">
-          <p class="eyebrow">Choose your path</p>
-          <h2>CHOOSE YOUR <span>CLASS</span></h2>
-          <p>8 Classes — find the path that fits your legend.</p>
-        </div>
-        <div class="class-grid">
-          <article class="class-card"><img src="assets/images/class-swordsman.webp" alt="Official Swordsman class artwork" width="1200" height="1068" loading="lazy"><div class="class-info"><span>Tank / Melee</span><h3 class="class-name" data-en="Swordsman" data-id="Pendekar Pedang" data-th="นักดาบ">Swordsman</h3><p>Stand at the front.</p></div></article>
-          <article class="class-card"><img src="assets/images/class-mage.webp" alt="Official Mage class artwork" width="960" height="540" loading="lazy"><div class="class-info"><span>Magic DPS</span><h3 class="class-name" data-en="Mage" data-id="Penyihir" data-th="นักเวท">Mage</h3><p>Command the elements.</p></div></article>
-          <article class="class-card"><img src="assets/images/class-archer.webp" alt="Official Archer class artwork" width="1056" height="1286" loading="lazy"><div class="class-info"><span>Ranged DPS</span><h3 class="class-name" data-en="Archer" data-id="Pemanah" data-th="นักธนู">Archer</h3><p>Strike from afar.</p></div></article>
-          <article class="class-card"><img src="assets/images/class-acolyte.webp" alt="Official Acolyte class artwork" width="1200" height="1267" loading="lazy"><div class="class-info"><span>Healer / Support</span><h3 class="class-name" data-en="Acolyte" data-id="Akolit" data-th="อโคไลต์">Acolyte</h3><p>Protect your allies.</p></div></article>
-          <article class="class-card"><img src="assets/images/class-merchant.webp" alt="Official Merchant class artwork" width="1200" height="1249" loading="lazy"><div class="class-info"><span>Craft / Trade</span><h3 class="class-name" data-en="Merchant" data-id="Pedagang" data-th="พ่อค้า">Merchant</h3><p>Master commerce.</p></div></article>
-          <article class="class-card"><img src="assets/images/class-thief.webp" alt="Official Thief class artwork" width="1200" height="1449" loading="lazy"><div class="class-info"><span>Assassin / Speed</span><h3 class="class-name" data-en="Thief" data-id="Pencuri" data-th="โจร">Thief</h3><p>Move without warning.</p></div></article>
-          <article class="class-card"><img src="assets/images/class-swordsman.webp" alt="Swordsman artwork reused for the Knight class card" width="1200" height="1068" loading="lazy"><div class="class-info"><span>Frontline / Defense</span><h3 class="class-name" data-en="Knight" data-id="Ksatria" data-th="อัศวิน">Knight</h3><p>Defend allies in battle.</p></div></article>
-          <article class="class-card"><img src="assets/images/class-acolyte.webp" alt="Acolyte artwork reused for the Priest class card" width="1200" height="1267" loading="lazy"><div class="class-info"><span>Healing / Support</span><h3 class="class-name" data-en="Priest" data-id="Pendeta" data-th="พรีสต์">Priest</h3><p>Bring holy aid to your party.</p></div></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section proof-section" id="proof">
-      <div class="container">
-        <div class="section-heading centered">
-          <p class="eyebrow">Visual proof</p>
-          <h2>YOUR LEGEND, <span>WRITTEN IN GOLD</span></h2>
-        </div>
-        <div class="proof-grid">
-          <article class="proof-card"><img src="assets/images/proof-dungeons.webp" alt="Official Ragnarok: The New World dungeon gameplay" width="1200" height="675" loading="lazy"><div><span>EXPLORE</span><h3>Dungeons</h3><p>Party up for story raids and dangerous realms.</p></div></article>
-          <article class="proof-card"><img src="assets/images/proof-mvp.webp" alt="Official Ragnarok: The New World MVP boss gameplay" width="1200" height="675" loading="lazy"><div><span>CHALLENGE</span><h3>MVP Bosses</h3><p>Challenge legendary bosses across Midgard.</p></div></article>
-          <article class="proof-card"><img src="assets/images/proof-guildwars.webp" alt="Official Ragnarok: The New World guild war gameplay" width="1200" height="675" loading="lazy"><div><span>CONQUER</span><h3>Guild Wars</h3><p>Raise your banner and fight for glory.</p></div></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section start-section" id="start">
-      <div class="container">
-        <div class="section-heading centered">
-          <p class="eyebrow">Begin your journey</p>
-          <h2>HOW TO START IN <span>3 STEPS</span></h2>
-        </div>
-        <ol class="steps-grid">
-          <li><span>01</span><h3>Choose Your Hero</h3><p>Select the class that matches your combat style.</p></li>
-          <li><span>02</span><h3>Create Your Legend</h3><p>Customize your adventurer and enter Midgard.</p></li>
-          <li><span>03</span><h3>Start the Adventure</h3><p>Explore, party up and conquer the New World.</p></li>
-        </ol>
-        <div class="center-action"><a class="btn btn-gold" href="#go2offer#">START ADVENTURE</a></div>
-      </div>
-    </section>
-
-    <section class="section faq-section" id="faq">
+    <section class="section" id="faq">
       <div class="container faq-layout">
         <div class="section-heading">
-          <p class="eyebrow">Before you begin</p>
-          <h2>FREQUENTLY<br><span>ASKED QUESTIONS</span></h2>
+          <p class="eyebrow" data-i18n="faq.eyebrow">Before you begin</p>
+          <h2><span data-i18n="faq.heading">FREQUENTLY</span><br><span data-i18n="faq.heading.emphasis">ASKED QUESTIONS</span></h2>
         </div>
         <div class="faq-list">
-          <details><summary>Is Ragnarok: The New World free to play?</summary><p>Ragnarok: The New World is available as a free-to-play adventure, with optional in-game purchases.</p></details>
-          <details><summary>Which platforms are supported?</summary><p>Play on Windows PC or mobile through the official Ragnarok: The New World platforms.</p></details>
-          <details><summary>How many classes can I choose?</summary><p>Choose from six classic base classes: Swordsman, Mage, Archer, Thief, Acolyte and Merchant.</p></details>
-          <details><summary>Can I play with friends?</summary><p>Yes. Party up for dungeons and MVP battles, or join a guild for guild wars and shared adventures.</p></details>
+          <details><summary data-i18n="faq.q1">Is it Free to Play?</summary><p data-i18n="faq.a1">Yes, 100% free on Steam.</p></details>
+          <details><summary data-i18n="faq.q2">Do I need a powerful PC?</summary><p data-i18n="faq.a2">No, it runs on most PCs.</p></details>
+          <details><summary data-i18n="faq.q3">Can I play with my friends?</summary><p data-i18n="faq.a3">Yes, with guilds, parties and PvP.</p></details>
+          <details><summary data-i18n="faq.q4">Is this the official Ragnarok?</summary><p data-i18n="faq.a4">Yes, it is official on Steam.</p></details>
         </div>
       </div>
     </section>
 
-    <section class="final-cta" id="go2offer#">
-      <div class="container final-content">
-        <p class="eyebrow">Your next chapter</p>
-        <h2>YOUR LEGEND<br><span>STARTS NOW</span></h2>
-        <a class="btn btn-gold" href="#go2offer#">PLAY NOW</a>
-      </div>
-    </section>
   </main>
 
   <footer>
-    <div class="container footer-inner">
-      <a class="brand" href="#top"><span class="brand-mark">R</span><span>RAGNAROK<small>THE NEW WORLD</small></span></a>
-      <p>&copy; GRAVITY Co., Ltd. &amp; Gravity Game Vision. All rights reserved.</p>
-      <div class="social-links"><a href="https://www.facebook.com/RagnarokTheNewWorld.Gravity">Facebook</a><a href="https://gwww.gnjoy.hk/sea_official/index.html">Official Site</a></div>
+    <section class="final-cta" id="go2offer#">
+      <div class="container final-content">
+        <p class="eyebrow" data-i18n="cta.eyebrow">Your next chapter</p>
+        <h2><span data-i18n="cta.heading">YOUR LEGEND</span><br><span data-i18n="cta.heading.emphasis">STARTS NOW</span></h2>
+        <a class="btn btn-gold" href="#go2offer#" data-i18n="button.play">PLAY NOW</a>
+      </div>
+    </section>
+    <div class="footer-meta">
+      <div class="container footer-inner">
+        <a class="brand" href="#top" aria-label="Ragnarok: The New World" data-i18n="brand.title" data-i18n-attr="aria-label"><span class="brand-mark">R</span><span><span data-i18n="brand.name">RAGNAROK</span><small data-i18n="brand.subtitle">THE NEW WORLD</small></span></a>
+        <p data-i18n="footer.copyright">&copy; GRAVITY Co., Ltd. &amp; Gravity Game Vision. All rights reserved.</p>
+        <div class="social-links"><a href="https://www.facebook.com/RagnarokTheNewWorld.Gravity" data-i18n="footer.facebook">Facebook</a><a href="https://gwww.gnjoy.hk/sea_official/index.html" data-i18n="footer.official">Official Site</a><span class="footer-steam"><span class="steam-word" aria-hidden="true" data-i18n="steam.brand">STEAM</span><span data-i18n="steam.footer">Official Ragnarok: The New World on Steam</span></span></div>
+      </div>
     </div>
   </footer>
-  <a class="sticky-cta" href="#go2offer#">PLAY NOW - FREE</a>
+  <a class="sticky-cta" href="#go2offer#" data-i18n="button.play">PLAY NOW</a>
 </body>
 </html>
