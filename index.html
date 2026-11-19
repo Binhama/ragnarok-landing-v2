@@ -3,12 +3,16 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#0A0A0A">
+  <meta name="theme-color" content="#0A0A0F">
+  <style>html { color-scheme:dark; background:#0A0A0F; }</style>
   <meta name="description" content="Ragnarok: The New World - A New Legend Awakes in Midgard." data-i18n="meta.description" data-i18n-attr="content">
-  <title data-i18n="brand.title">Ragnarok: The New World</title>
+  <title>Ragnarok: The New World</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico?v=2">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png?v=2">
+  <link rel="apple-touch-icon" href="favicon.png?v=2">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;600;700&family=Uncial+Antiqua&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
@@ -19,27 +23,52 @@
         <span class="brand-mark">R</span>
         <span><span data-i18n="brand.name">RAGNAROK</span><small data-i18n="brand.subtitle">THE NEW WORLD</small></span>
       </a>
-      <nav class="nav-links" aria-label="Header actions" data-i18n="nav.aria" data-i18n-attr="aria-label">
-        <div class="language-switcher" role="group" aria-label="Page language" data-i18n="language.aria" data-i18n-attr="aria-label">
-          <button type="button" data-language="en" aria-pressed="true"><span aria-hidden="true">🇬🇧</span> <span data-i18n="language.en">EN - English</span></button>
-          <span aria-hidden="true">|</span>
-          <button type="button" data-language="id" aria-pressed="false"><span aria-hidden="true">🇮🇩</span> <span data-i18n="language.id">ID - Indonesian</span></button>
-          <span aria-hidden="true">|</span>
-          <button type="button" data-language="fil" aria-pressed="false"><span aria-hidden="true">🇵🇭</span> <span data-i18n="language.fil">PH - Filipino</span></button>
-          <span aria-hidden="true">|</span>
-          <button type="button" data-language="th" aria-pressed="false"><span aria-hidden="true">🇹🇭</span> <span data-i18n="language.th">TH - Thai</span></button>
-          <span aria-hidden="true">|</span>
-          <button type="button" data-language="vi" aria-pressed="false"><span aria-hidden="true">🇻🇳</span> <span data-i18n="language.vi">VN - Vietnamese</span></button>
-        </div>
-        <a class="btn btn-gold" href="#go2offer#" data-i18n="button.play">PLAY NOW</a>
+      <nav class="nav-links" aria-label="Main navigation" data-i18n="nav.aria" data-i18n-attr="aria-label">
+        <details class="nav-dropdown nav-mobile-hide" name="nav-menus">
+          <summary data-i18n="nav.languages">Languages</summary>
+          <div class="dropdown-menu language-switcher" role="group" aria-label="Page language" data-i18n="language.aria" data-i18n-attr="aria-label">
+            <button type="button" data-language="en" aria-pressed="true"><span aria-hidden="true">🇬🇧</span> <span data-i18n="language.en">EN - English</span></button>
+            <button type="button" data-language="id" aria-pressed="false"><span aria-hidden="true">🇮🇩</span> <span data-i18n="language.id">ID - Indonesian</span></button>
+            <button type="button" data-language="fil" aria-pressed="false"><span aria-hidden="true">🇵🇭</span> <span data-i18n="language.fil">PH - Filipino</span></button>
+            <button type="button" data-language="th" aria-pressed="false"><span aria-hidden="true">🇹🇭</span> <span data-i18n="language.th">TH - Thai</span></button>
+            <button type="button" data-language="vi" aria-pressed="false"><span aria-hidden="true">🇻🇳</span> <span data-i18n="language.vi">VN - Vietnamese</span></button>
+          </div>
+        </details>
+        <details class="nav-dropdown nav-mobile-hide" name="nav-menus">
+          <summary data-i18n="nav.before">Before You Begin</summary>
+          <div class="dropdown-menu">
+            <button type="button" data-open-requirements data-i18n="requirements.menu">System Requirements</button>
+          </div>
+        </details>
+        <details class="nav-dropdown nav-section-link nav-mobile-hide" name="nav-menus">
+          <summary data-nav-target="#features" data-i18n="nav.features">Features</summary>
+          <div class="dropdown-menu"><a href="#features" data-i18n="nav.features">Features</a></div>
+        </details>
+        <details class="nav-dropdown nav-section-link" name="nav-menus">
+          <summary data-nav-target="#experience" data-i18n="nav.experience">Experience</summary>
+          <div class="dropdown-menu"><a href="#experience" data-i18n="nav.experience">Experience</a></div>
+        </details>
+        <details class="nav-dropdown nav-section-link" name="nav-menus">
+          <summary data-nav-target="#start" data-i18n="nav.how">How To Play</summary>
+          <div class="dropdown-menu"><a href="#start" data-i18n="nav.how">How To Play</a></div>
+        </details>
+        <details class="nav-dropdown nav-section-link" name="nav-menus">
+          <summary data-nav-target="#faq" data-i18n="nav.faq">FAQ</summary>
+          <div class="dropdown-menu"><a href="#faq" data-i18n="nav.faq">FAQ</a></div>
+        </details>
+        <a class="nav-mobile-link" href="#features" data-i18n="nav.features">Features</a>
+        <a class="nav-mobile-link" href="#start" data-i18n="nav.how">How To Play</a>
+        <a class="nav-mobile-link" href="#faq" data-i18n="nav.faq">FAQ</a>
       </nav>
     </div>
   </header>
 
   <main>
     <section class="hero" aria-labelledby="hero-title">
-      <img class="hero-image" src="assets/images/hero.webp" alt="Official Ragnarok: The New World hero artwork" data-i18n="image.hero" data-i18n-attr="alt" width="1200" height="675" fetchpriority="high">
-      <div class="hero-shade"></div>
+      <picture>
+        <source srcset="assets/images/hero-640.webp 640w, assets/images/hero.webp 1200w" sizes="100vw" type="image/webp">
+        <img class="hero-image" src="assets/images/hero.jpg" srcset="assets/images/hero-640.jpg 640w, assets/images/hero.jpg 1200w" sizes="100vw" alt="Official Ragnarok: The New World hero artwork" data-i18n="image.hero" data-i18n-attr="alt" width="1200" height="675" fetchpriority="high">
+      </picture>
       <div class="container hero-inner">
         <div class="hero-copy">
           <p class="hero-free-badge" data-i18n="hero.badge.free">100% FREE TO PLAY</p>
@@ -56,6 +85,74 @@
             <span><b>100+</b> <span data-i18n="hero.stats.dungeons">Dungeons</span></span>
             <span><span data-i18n="hero.stats.pvp">PvP &amp;</span> <b data-i18n="hero.stats.guild">Guild Wars</b></span>
             <span data-i18n="hero.stats.free">FREE TO PLAY</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section world-section" id="experience" aria-labelledby="midgard-title">
+      <div class="container">
+        <div class="section-heading centered world-heading">
+          <p class="eyebrow world-eyebrow" data-i18n="midgard.eyebrow">THE WORLD OF MIDGARD</p>
+          <h2 id="midgard-title"><span data-i18n="midgard.title.line1">A NEW ERA FOR THE</span><br><span data-i18n="midgard.title.line2">LEGENDARY RAGNAROK</span></h2>
+          <span class="world-divider" aria-hidden="true"></span>
+          <p data-i18n="midgard.description">Midgard welcomes you like never before. An expansive open-world MMORPG without artificial barriers, where breathtaking vistas, epic multiplayer raids, and complete character freedom await every adventurer.</p>
+        </div>
+        <div class="feature-carousel" data-carousel aria-label="Midgard game features" data-i18n="carousel.aria" data-i18n-attr="aria-label">
+          <div class="carousel-viewport">
+            <div class="carousel-track">
+              <article class="carousel-card carousel-card-world">
+                <picture class="carousel-image" aria-hidden="true">
+                  <source srcset="assets/images/world-480.webp 480w, assets/images/world.webp 1000w" sizes="(max-width: 767px) calc(100vw - 32px), 940px" type="image/webp">
+                  <img src="assets/images/world.jpg" srcset="assets/images/world-480.jpg 480w, assets/images/world.jpg 1000w" sizes="(max-width: 767px) calc(100vw - 32px), 940px" alt="" width="1000" height="562" loading="lazy">
+                </picture>
+                <h3 class="carousel-value" data-i18n="carousel.world.value">LEGENDARY RAGNAROK</h3>
+                <p class="carousel-caption" data-i18n="carousel.world.caption">Explore Midgard's Open World</p>
+              </article>
+              <article class="carousel-card carousel-card-free">
+                <picture class="carousel-image" aria-hidden="true">
+                  <source srcset="assets/images/proof-dungeons-480.webp 480w, assets/images/proof-dungeons.webp 1000w" sizes="(max-width: 767px) calc(100vw - 32px), 940px" type="image/webp">
+                  <img src="assets/images/proof-dungeons.jpg" srcset="assets/images/proof-dungeons-480.jpg 480w, assets/images/proof-dungeons.jpg 1000w" sizes="(max-width: 767px) calc(100vw - 32px), 940px" alt="" width="1000" height="562" loading="lazy">
+                </picture>
+                <h3 class="carousel-value" data-i18n="carousel.free.value">100%</h3>
+                <p class="carousel-caption" data-i18n="carousel.free.caption">Free-to-Play</p>
+              </article>
+              <article class="carousel-card carousel-card-raids">
+                <picture class="carousel-image" aria-hidden="true">
+                  <source srcset="assets/images/hero-4-480.webp 480w, assets/images/hero-4.webp 960w" sizes="(max-width: 767px) calc(100vw - 32px), 940px" type="image/webp">
+                  <img src="assets/images/hero-4.jpg" srcset="assets/images/hero-4-480.jpg 480w, assets/images/hero-4.jpg 960w" sizes="(max-width: 767px) calc(100vw - 32px), 940px" alt="" width="960" height="540" loading="lazy">
+                </picture>
+                <h3 class="carousel-value" data-i18n="carousel.raids.value">Epic Multiplayer Raids</h3>
+                <p class="carousel-caption" data-i18n="carousel.raids.caption">Fight Mighty Bosses Together</p>
+              </article>
+              <article class="carousel-card carousel-card-freedom">
+                <picture class="carousel-image" aria-hidden="true">
+                  <source srcset="assets/v2/wallpaper2-3cf346d2-480.webp 480w, assets/v2/wallpaper2-3cf346d2.webp 1000w" sizes="(max-width: 767px) calc(100vw - 32px), 940px" type="image/webp">
+                  <img src="assets/v2/wallpaper2-3cf346d2.jpg" srcset="assets/v2/wallpaper2-3cf346d2-480.jpg 480w, assets/v2/wallpaper2-3cf346d2.jpg 1000w" sizes="(max-width: 767px) calc(100vw - 32px), 940px" alt="" width="1000" height="562" loading="lazy">
+                </picture>
+                <h3 class="carousel-value" data-i18n="carousel.freedom.value">Character Freedom</h3>
+                <p class="carousel-caption" data-i18n="carousel.freedom.caption">Different Classes. Customize Your Hero.</p>
+              </article>
+              <article class="carousel-card carousel-card-vistas">
+                <picture class="carousel-image" aria-hidden="true">
+                  <source srcset="assets/v2/wallpaper4-3bdb6743-480.webp 480w, assets/v2/wallpaper4-3bdb6743.webp 1000w" sizes="(max-width: 767px) calc(100vw - 32px), 940px" type="image/webp">
+                  <img src="assets/v2/wallpaper4-3bdb6743.jpg" srcset="assets/v2/wallpaper4-3bdb6743-480.jpg 480w, assets/v2/wallpaper4-3bdb6743.jpg 1000w" sizes="(max-width: 767px) calc(100vw - 32px), 940px" alt="" width="1000" height="562" loading="lazy">
+                </picture>
+                <h3 class="carousel-value" data-i18n="carousel.vistas.value">Breathtaking Vistas</h3>
+                <p class="carousel-caption" data-i18n="carousel.vistas.caption">Discover Midgard's Cities, Castles and Nature</p>
+              </article>
+            </div>
+          </div>
+          <div class="carousel-controls">
+            <button class="carousel-arrow" type="button" data-carousel-prev aria-label="Previous feature" data-i18n="carousel.previous" data-i18n-attr="aria-label">&lsaquo;</button>
+            <div class="carousel-dots" role="group" aria-label="Choose a feature" data-i18n="carousel.dots" data-i18n-attr="aria-label">
+              <button type="button" class="carousel-dot" data-carousel-dot="0" aria-label="Show feature 1" data-i18n="carousel.dot.1" data-i18n-attr="aria-label"></button>
+              <button type="button" class="carousel-dot" data-carousel-dot="1" aria-label="Show feature 2" data-i18n="carousel.dot.2" data-i18n-attr="aria-label"></button>
+              <button type="button" class="carousel-dot" data-carousel-dot="2" aria-label="Show feature 3" data-i18n="carousel.dot.3" data-i18n-attr="aria-label"></button>
+              <button type="button" class="carousel-dot" data-carousel-dot="3" aria-label="Show feature 4" data-i18n="carousel.dot.4" data-i18n-attr="aria-label"></button>
+              <button type="button" class="carousel-dot" data-carousel-dot="4" aria-label="Show feature 5" data-i18n="carousel.dot.5" data-i18n-attr="aria-label"></button>
+            </div>
+            <button class="carousel-arrow" type="button" data-carousel-next aria-label="Next feature" data-i18n="carousel.next" data-i18n-attr="aria-label">&rsaquo;</button>
           </div>
         </div>
       </div>
@@ -89,26 +186,6 @@
         </div>
       </div>
 
-      <section class="section" id="classes">
-        <div class="container">
-          <div class="section-heading centered">
-            <p class="eyebrow" data-i18n="classes.eyebrow">Choose your path</p>
-            <h2><span data-i18n="classes.heading">CHOOSE YOUR</span> <span data-i18n="classes.heading.emphasis">CLASS</span></h2>
-            <p data-i18n="classes.description">8 Classes — find the path that fits your legend.</p>
-          </div>
-          <div class="class-grid">
-            <article class="class-card"><img src="assets/images/class-swordsman.webp" alt="Official Swordsman class artwork" data-i18n="image.swordsman" data-i18n-attr="alt" width="1200" height="1068" loading="lazy"><div class="class-info"><span data-i18n="class.role.tank">Tank / Melee</span><h3 data-i18n="class.swordsman">Swordsman</h3><p data-i18n="class.swordsman.description">Stand at the front.</p></div></article>
-            <article class="class-card"><img src="assets/images/class-mage.webp" alt="Official Mage class artwork" data-i18n="image.mage" data-i18n-attr="alt" width="960" height="540" loading="lazy"><div class="class-info"><span data-i18n="class.role.magic">Magic DPS</span><h3 data-i18n="class.mage">Mage</h3><p data-i18n="class.mage.description">Command the elements.</p></div></article>
-            <article class="class-card"><img src="assets/images/class-archer.webp" alt="Official Archer class artwork" data-i18n="image.archer" data-i18n-attr="alt" width="1056" height="1286" loading="lazy"><div class="class-info"><span data-i18n="class.role.ranged">Ranged DPS</span><h3 data-i18n="class.archer">Archer</h3><p data-i18n="class.archer.description">Strike from afar.</p></div></article>
-            <article class="class-card"><img src="assets/images/class-acolyte.webp" alt="Official Acolyte class artwork" data-i18n="image.acolyte" data-i18n-attr="alt" width="1200" height="1267" loading="lazy"><div class="class-info"><span data-i18n="class.role.healer">Healer / Support</span><h3 data-i18n="class.acolyte">Acolyte</h3><p data-i18n="class.acolyte.description">Protect your allies.</p></div></article>
-            <article class="class-card"><img src="assets/images/class-merchant.webp" alt="Official Merchant class artwork" data-i18n="image.merchant" data-i18n-attr="alt" width="1200" height="1249" loading="lazy"><div class="class-info"><span data-i18n="class.role.trade">Craft / Trade</span><h3 data-i18n="class.merchant">Merchant</h3><p data-i18n="class.merchant.description">Master commerce.</p></div></article>
-            <article class="class-card"><img src="assets/images/class-thief.webp" alt="Official Thief class artwork" data-i18n="image.thief" data-i18n-attr="alt" width="1200" height="1449" loading="lazy"><div class="class-info"><span data-i18n="class.role.assassin">Assassin / Speed</span><h3 data-i18n="class.thief">Thief</h3><p data-i18n="class.thief.description">Move without warning.</p></div></article>
-            <article class="class-card"><img src="assets/images/class-swordsman.webp" alt="Swordsman artwork reused for the Knight class card" data-i18n="image.knight" data-i18n-attr="alt" width="1200" height="1068" loading="lazy"><div class="class-info"><span data-i18n="class.role.frontline">Frontline / Defense</span><h3 data-i18n="class.knight">Knight</h3><p data-i18n="class.knight.description">Defend allies in battle.</p></div></article>
-            <article class="class-card"><img src="assets/images/class-acolyte.webp" alt="Acolyte artwork reused for the Priest class card" data-i18n="image.priest" data-i18n-attr="alt" width="1200" height="1267" loading="lazy"><div class="class-info"><span data-i18n="class.role.healing">Healing / Support</span><h3 data-i18n="class.priest">Priest</h3><p data-i18n="class.priest.description">Bring holy aid to your party.</p></div></article>
-          </div>
-        </div>
-      </section>
-
       <section class="section proof-section" id="proof">
         <div class="container">
           <div class="section-heading centered">
@@ -116,9 +193,27 @@
             <h2><span data-i18n="proof.heading">YOUR LEGEND,</span> <span data-i18n="proof.heading.emphasis">WRITTEN IN GOLD</span></h2>
           </div>
           <div class="proof-grid">
-            <article class="proof-card"><img src="assets/images/proof-dungeons.webp" alt="Official Ragnarok: The New World dungeon gameplay" data-i18n="image.proof.dungeons" data-i18n-attr="alt" width="1200" height="675" loading="lazy"><div><span data-i18n="proof.dungeons.label">EXPLORE</span><h3 data-i18n="proof.dungeons.title">Dungeons</h3><p data-i18n="proof.dungeons.description">Party up for story raids and dangerous realms.</p></div></article>
-            <article class="proof-card"><img src="assets/images/proof-mvp.webp" alt="Official Ragnarok: The New World MVP boss gameplay" data-i18n="image.proof.mvp" data-i18n-attr="alt" width="1200" height="675" loading="lazy"><div><span data-i18n="proof.mvp.label">CHALLENGE</span><h3 data-i18n="proof.mvp.title">MVP Bosses</h3><p data-i18n="proof.mvp.description">Challenge legendary bosses across Midgard.</p></div></article>
-            <article class="proof-card"><img src="assets/images/proof-guildwars.webp" alt="Official Ragnarok: The New World guild war gameplay" data-i18n="image.proof.guildwars" data-i18n-attr="alt" width="1200" height="675" loading="lazy"><div><span data-i18n="proof.guildwars.label">CONQUER</span><h3 data-i18n="proof.guildwars.title">Guild Wars</h3><p data-i18n="proof.guildwars.description">Raise your banner and fight for glory.</p></div></article>
+            <article class="proof-card">
+              <picture>
+                <source srcset="assets/images/proof-dungeons-480.webp 480w, assets/images/proof-dungeons.webp 1000w" sizes="(max-width: 767px) calc(100vw - 32px), (max-width: 1199px) calc((100vw - 80px) / 2), 434px" type="image/webp">
+                <img src="assets/images/proof-dungeons.jpg" srcset="assets/images/proof-dungeons-480.jpg 480w, assets/images/proof-dungeons.jpg 1000w" sizes="(max-width: 767px) calc(100vw - 32px), (max-width: 1199px) calc((100vw - 80px) / 2), 434px" alt="Official Ragnarok: The New World dungeon gameplay" data-i18n="image.proof.dungeons" data-i18n-attr="alt" width="1000" height="562" loading="lazy">
+              </picture>
+              <div><span data-i18n="proof.dungeons.label">EXPLORE</span><h3 data-i18n="proof.dungeons.title">Dungeons</h3><p data-i18n="proof.dungeons.description">Party up for story raids and dangerous realms.</p></div>
+            </article>
+            <article class="proof-card">
+              <picture>
+                <source srcset="assets/images/proof-mvp-480.webp 480w, assets/images/proof-mvp.webp 1000w" sizes="(max-width: 767px) calc(100vw - 32px), (max-width: 1199px) calc((100vw - 80px) / 2), 434px" type="image/webp">
+                <img src="assets/images/proof-mvp.jpg" srcset="assets/images/proof-mvp-480.jpg 480w, assets/images/proof-mvp.jpg 1000w" sizes="(max-width: 767px) calc(100vw - 32px), (max-width: 1199px) calc((100vw - 80px) / 2), 434px" alt="Official Ragnarok: The New World MVP boss gameplay" data-i18n="image.proof.mvp" data-i18n-attr="alt" width="1000" height="562" loading="lazy">
+              </picture>
+              <div><span data-i18n="proof.mvp.label">CHALLENGE</span><h3 data-i18n="proof.mvp.title">MVP Bosses</h3><p data-i18n="proof.mvp.description">Challenge legendary bosses across Midgard.</p></div>
+            </article>
+            <article class="proof-card">
+              <picture>
+                <source srcset="assets/images/proof-guildwars-480.webp 480w, assets/images/proof-guildwars.webp 1000w" sizes="(max-width: 767px) calc(100vw - 32px), (max-width: 1199px) calc((100vw - 80px) / 2), 434px" type="image/webp">
+                <img src="assets/images/proof-guildwars.jpg" srcset="assets/images/proof-guildwars-480.jpg 480w, assets/images/proof-guildwars.jpg 1000w" sizes="(max-width: 767px) calc(100vw - 32px), (max-width: 1199px) calc((100vw - 80px) / 2), 434px" alt="Official Ragnarok: The New World guild war gameplay" data-i18n="image.proof.guildwars" data-i18n-attr="alt" width="1000" height="562" loading="lazy">
+              </picture>
+              <div><span data-i18n="proof.guildwars.label">CONQUER</span><h3 data-i18n="proof.guildwars.title">Guild Wars</h3><p data-i18n="proof.guildwars.description">Raise your banner and fight for glory.</p></div>
+            </article>
           </div>
         </div>
       </section>
@@ -137,43 +232,6 @@
           <div class="center-action"><a class="btn btn-gold" href="#go2offer#" data-i18n="button.play">PLAY NOW</a></div>
         </div>
       </section>
-
-      <section class="section" id="social-proof">
-        <div class="container">
-          <div class="social-grid">
-            <article class="social-card"><p data-i18n="social.sea">Join players across SEA</p></article>
-            <article class="social-card"><p data-i18n="social.guild">Play with your guild</p></article>
-          </div>
-        </div>
-      </section>
-    </section>
-
-    <section class="section" id="system-requirements">
-      <div class="container">
-        <div class="section-heading centered">
-          <p class="eyebrow" data-i18n="requirements.eyebrow">System requirements</p>
-          <h2 data-i18n="requirements.heading">CAN YOUR PC RUN IT?</h2>
-        </div>
-        <div class="requirements-grid">
-          <article class="requirements-card">
-            <h3 data-i18n="requirements.minimum">MINIMUM</h3>
-            <p data-i18n="requirements.minimum.os">Operating System: Windows 10</p>
-            <p data-i18n="requirements.minimum.cpu">Processor: Intel i3 / Ryzen 3</p>
-            <p data-i18n="requirements.minimum.memory">Memory: 8GB RAM</p>
-            <p data-i18n="requirements.minimum.gpu">Graphics: GTX 1050</p>
-            <p data-i18n="requirements.minimum.storage">Storage: 20GB</p>
-          </article>
-          <article class="requirements-card">
-            <h3 data-i18n="requirements.recommended">RECOMMENDED</h3>
-            <p data-i18n="requirements.recommended.os">Operating System: Windows 11</p>
-            <p data-i18n="requirements.recommended.cpu">Processor: Intel i5 / Ryzen 5</p>
-            <p data-i18n="requirements.recommended.memory">Memory: 16GB RAM</p>
-            <p data-i18n="requirements.recommended.gpu">Graphics: GTX 1660</p>
-            <p data-i18n="requirements.recommended.storage">Storage: 20GB SSD</p>
-          </article>
-        </div>
-        <p class="requirements-note" data-i18n="requirements.note">Runs on most PCs - No powerful PC needed</p>
-      </div>
     </section>
 
     <section class="section" id="faq">
@@ -192,6 +250,35 @@
     </section>
 
   </main>
+
+  <dialog class="requirements-dialog" id="requirements-dialog" aria-labelledby="requirements-title">
+    <button class="requirements-dialog-close" type="button" data-close-requirements aria-label="Close system requirements" data-i18n="requirements.close" data-i18n-attr="aria-label">&times;</button>
+    <div class="requirements-dialog-content">
+      <div class="section-heading centered">
+        <p class="eyebrow" data-i18n="requirements.eyebrow">System requirements</p>
+        <h2 id="requirements-title" data-i18n="requirements.heading">CAN YOUR PC RUN IT?</h2>
+      </div>
+      <div class="requirements-grid">
+        <article class="requirements-card">
+          <h3 data-i18n="requirements.minimum">MINIMUM</h3>
+          <p data-i18n="requirements.minimum.os">Operating System: Windows 10</p>
+          <p data-i18n="requirements.minimum.cpu">Processor: Intel i3 / Ryzen 3</p>
+          <p data-i18n="requirements.minimum.memory">Memory: 8GB RAM</p>
+          <p data-i18n="requirements.minimum.gpu">Graphics: GTX 1050</p>
+          <p data-i18n="requirements.minimum.storage">Storage: 20GB SSD</p>
+        </article>
+        <article class="requirements-card">
+          <h3 data-i18n="requirements.recommended">RECOMMENDED</h3>
+          <p data-i18n="requirements.recommended.os">Operating System: Windows 11</p>
+          <p data-i18n="requirements.recommended.cpu">Processor: Intel i5 / Ryzen 5</p>
+          <p data-i18n="requirements.recommended.memory">Memory: 16GB RAM</p>
+          <p data-i18n="requirements.recommended.gpu">Graphics: GTX 1660</p>
+          <p data-i18n="requirements.recommended.storage">Storage: 20GB SSD</p>
+        </article>
+      </div>
+      <p class="requirements-note" data-i18n="requirements.note">Runs on most PCs - No powerful PC needed</p>
+    </div>
+  </dialog>
 
   <footer>
     <section class="final-cta" id="go2offer#">
